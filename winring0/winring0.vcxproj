@@ -118,10 +118,16 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
       <SignManifests>false</SignManifests>
+         <DriverSign>
+      <FileDigestAlgorithm>SHA256</FileDigestAlgorithm>
+    </DriverSign>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
       <SignManifests>false</SignManifests>
+         <DriverSign>
+      <FileDigestAlgorithm>SHA256</FileDigestAlgorithm>
+    </DriverSign>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -139,11 +145,17 @@
     <ClCompile>
       <WarningLevel>TurnOffAllWarnings</WarningLevel>
     </ClCompile>
+       <DriverSign>
+      <FileDigestAlgorithm>SHA256</FileDigestAlgorithm>
+    </DriverSign>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <TreatWarningAsError>false</TreatWarningAsError>
     </ClCompile>
+       <DriverSign>
+      <FileDigestAlgorithm>SHA256</FileDigestAlgorithm>
+    </DriverSign>
   </ItemDefinitionGroup>
 
   <ItemGroup>
